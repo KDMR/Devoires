@@ -8,7 +8,7 @@
     <script type="text/javascript" src="slideshow.js" ></script>
     <style type="text/css">
         /* Global Config
-        -------------------------------------------------- */
+-------------------------------------------------- */
 
         *{
             padding: 0;
@@ -16,22 +16,22 @@
         }
 
         /* SlideShow
-        -------------------------------------------------- */
+-------------------------------------------------- */
 
         div.container{
-            width       : 980px;
-            margin      : 0 auto;
+            width : 980px;
+            margin : 0 auto;
             padding-top : 1px;
         }
 
         div.slideshow{
-            width      : 650px;
-            height     : 300px;
-            margin     : 30px auto 0;
-            overflow   : hidden;
-            position   : relative;
-            background-image    : url('../images/loading.gif');
-            background-repeat   : no-repeat;
+            width : 650px;
+            height : 300px;
+            margin : 30px auto 0;
+            overflow : hidden;
+            position : relative;
+            background-image : url('../images/loading.gif');
+            background-repeat : no-repeat;
             background-position : center center;
             outline:1px solid black;
         }
@@ -42,25 +42,25 @@
         }
         div.slideshow div.train > div{
             height : inherit;
-            float  : left;
-            background-repeat   : no-repeat;
+            float : left;
+            background-repeat : no-repeat;
             background-position : left top;
         }
 
         div.active {
-            -webkit-transform: opacity 1;
-            -moz-transform: opacity 1;
-            -ms-transform: opacity 1;
-            -o-transform: opacity 1;
-            transform: opacity 1;
+            -webkit-transition: opacity 1;
+               -moz-transition: opacity 1;
+                -ms-transition: opacity 1;
+                 -o-transition: opacity 1;
+                    transition: opacity 1;
         }
 
-        div.notActive {
-            -webkit-transition: opacity 500ms 0.5;
-            -moz-transition: opacity 500ms 0.5;
-            -ms-transition: opacity 500ms 0.5;
-            -o-transition: opacity 500ms 0.5;
-            transition: opacity 500ms 0.5;
+        div.inactive {
+                -webkit-transition: opacity 500ms 05s;
+                   -moz-transition: opacity 500ms 05s;
+                    -ms-transition: opacity 500ms 05s;
+                     -o-transition: opacity 500ms 05s;
+                        transition: opacity 500ms 05s;
         }
         </style>
         <script type="text/javascript">
@@ -70,7 +70,7 @@
 
 
             var divs = getElementsByClassName('train').item(0).getElementsByTagName('div');
-            var i;  
+            var i;
             for (i=0 ; i<divs.length ; i++) {
                 divs.item(i).className = 'notActive';
             }
@@ -80,7 +80,7 @@
             }
 
             divs.item(i).onmouseout = function () {
-                divs.item(i).className = 'notActive';
+                divs.item(i).className = 'inactive';
             }
         </script>
 </head>
@@ -102,8 +102,8 @@
                     }
                 }
                 ?>
-            </div>
-        </div>
-    </div>
+</div>
+</div>
+</div>
 </body>
 </html>
