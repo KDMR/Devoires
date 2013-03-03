@@ -46,7 +46,7 @@
 			var divs = document.getElementsByClassName('content').item(0).getElementsByTagName('div');
 			function selecteds() {
 				var rand = Math.floor(Math.random()*num);
-				var hcolot = Math.floor(Math.random()*360);
+				var hcolor = Math.floor(Math.random()*360);
 				divs.item(rand).style.backgroundColor = "hsl(" + hcolor + ", 90%, 50%)";
 			}
 
