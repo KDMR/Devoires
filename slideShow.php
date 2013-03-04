@@ -3,12 +3,11 @@
 <head>
     <meta charset="UTF-8" />
     <title>Slideshow by PHP</title>
-    <link rel="stylesheet" type="text/css" href="slideshow.css" />
+    <link rel="stylesheet" type="text/css" href="main.css" />
     <script type="text/javascript" src="../zepto.js"></script>
-    <script type="text/javascript" src="slideshow.js" ></script>
     <style type="text/css">
         /* Global Config
--------------------------------------------------- */
+        -------------------------------------------------- */
 
         *{
             padding: 0;
@@ -16,7 +15,7 @@
         }
 
         /* SlideShow
--------------------------------------------------- */
+        -------------------------------------------------- */
 
         div.container{
             width : 980px;
@@ -47,42 +46,55 @@
             background-position : left top;
         }
 
-        div.active {
-            -webkit-transition: opacity 1;
-               -moz-transition: opacity 1;
-                -ms-transition: opacity 1;
-                 -o-transition: opacity 1;
-                    transition: opacity 1;
+        .active {
+            -webkit-filter: grayscale(0%);
+               -moz-filter: grayscale(0%);
+                -ms-filter: grayscale(0%);
+                 -o-filter: grayscale(0%);
+                    filter: grayscale(0%);
         }
 
-        div.inactive {
-                -webkit-transition: opacity 500ms 05s;
-                   -moz-transition: opacity 500ms 05s;
-                    -ms-transition: opacity 500ms 05s;
-                     -o-transition: opacity 500ms 05s;
-                        transition: opacity 500ms 05s;
-        }
-        </style>
-        <script type="text/javascript">
-                        $(document).ready(function(){
-                $('div.slideshow div.train > div').css('width',Math.ceil(650/5)+'px');
-            })
+        .inactive {
+            -webkit-filter: grayscale(100%);
+               -moz-filter: grayscale(100%);
+                -ms-filter: grayscale(100%);
+                 -o-filter: grayscale(100%);
+                    filter: grayscale(100%);
+        } 
+    </style>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('div.slideshow div.train > div').css('width',Math.ceil(650/5)+'px');
+        })
+
+            window.onload = function (){
+                
+                var container = document.getElementsByClassName('container').item(0);
+                var slideshow = container.getElementsByClassName('slideshow').item(0);
+                var train = slideshow.getElementsByClassName('train').item(0);
+                var divs = train.getElementsByTagName('div');
+               
+                
+
+                for (var i=0; i<divs.length; i++) {
+                    
+                    divs[i].className = 'inactive'; /*This could also be : $('div.slideshow div.train > div').addClass('inactive'); */
+
+                    (function(j){
+
+                        divs.item(j).onmouseout = function (){
+                            divs.item(j).className = 'inactive';
+                        };
+
+                        divs.item(j).onmouseover = function (){
+                            divs.item(j).className = 'active';
+                        };
 
 
-            var divs = getElementsByClassName('train').item(0).getElementsByTagName('div');
-            var i;
-            for (i=0 ; i<divs.length ; i++) {
-                divs.item(i).className = 'notActive';
+                    })(i);
+                }
             }
-
-            divs.item(i).onmouseover = function () {
-                divs.item(i).className = 'active';
-            }
-
-            divs.item(i).onmouseout = function () {
-                divs.item(i).className = 'inactive';
-            }
-        </script>
+    </script>
 </head>
 <body>
     <div class="container">
@@ -102,8 +114,9 @@
                     }
                 }
                 ?>
-</div>
-</div>
-</div>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="slideshow.js" ></script>
 </body>
 </html>
