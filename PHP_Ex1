@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+	<title>PHP Ex1</title>
+</head>
+<body>
+	<?php
+		/*$user = $_SERVER['HTTP_USER_AGENT'];
+		printr $user;*/		
+		$file = $_SERVER['SCRIPT_FILENAME'];
+		$user = $_SERVER['HTTP_USER_AGENT'];
+		$server = $_SERVER['SERVER_SOFTWARE'];
+		$address = $_SERVER['SERVER_ADDR'].
+
+		print "You are running this file: $file . <br />";
+		print "As this user: $user <br />";
+		print "On this server: $server <br />";
+		print "With this address: $address <br/>";
+
+	?>
+</body>
+</html>
