@@ -2,26 +2,27 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-	<title>Display Time</title>
-	<script type="text/javascript">
-		function timer(){
-            var d = new Date();                
-            var h = d.getHours();              
-            var m = d.getMinutes();            
-            var ampm = (h >= 12)?"PM":"AM";    
-            if (h > 12) h -= 12;               
-            if (h == 0) h = 12;                
-            if (m < 10) m = "0" + m;           
-            var t = h + ':' + m + ' ' + ampm;  
+        <title>Display Time</title>
+        <script type="text/javascript">
+            var timer = function timer(){
+                var d = new Date();                
+                var h = d.getHours();              
+                var m = d.getMinutes();
+                var s = d.getSeconds();            
+                var ampm = (h >= 12)?"PM":"AM";    
+                if (h > 12) h -= 12;               
+                if (h == 0) h = 12;                
+                if (m < 10) m = "0" + m;           
+                var t = h + ':' + m + ' ' + s + ' ' + ampm + '.';  
 
-            document.body.innerHTML = '';
-            document.body.innerHTML = t;
+                document.body.innerHTML = '';
+                document.body.innerHTML = t; 
+            };
 
-            setTimeout("time()", 10000); 
-        }
-	</script>
+            setInterval(timer , 1000);
+        </script>
 </head>
-<body onload = 'timer();'>
-	
+<body>
+        
 </body>
 </html>
