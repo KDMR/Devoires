@@ -1,0 +1,109 @@
+```html
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>S5</title>
+	<script type="text/javascript">
+		
+		//THIS PART IS MY WORK GENERATED ON:
+		//DATE: 1/23/2014
+
+		var generate = function (){
+			for (var index=0 ; index<250 ; index++){
+				document.write('<div class="entities"></div>');
+			}
+		};
+
+		var init = function (){
+			var divs = document.getElementsByClassName("entities");
+			document.body.style.backgroundColor = "#d4d4d4";
+
+			var rand = function(min , max){
+				return Math.floor((Math.random() * (max-min+1)));
+			};
+
+			var rndColor = function (){
+				var h = rand(1 , 360);
+				var s = rand(1 , 100);
+				var l = rand(1 , 100);
+				if (s < 50 && l > 55){
+					rndColor();
+				}else{
+					return 'hsl(' + h + ',' + s + '%,' + l + '%)';
+				}
+			};
+
+			var rndTop = function (){
+				return rand(20 , 400);
+			};
+
+			var rndLeft = function (){
+				return rand(20 , 600);
+			};
+
+			rndRotation = function(rnd){
+				return Math.floor(Math.random()*360);
+			};
+
+			var rndWidth = function (){
+				var pre = rand(80 , 120);
+				if (pre < 80){
+					rndWidth();
+				}else{
+					return pre;
+				}
+			};
+
+			var rndHeight = function (){
+				var pre = rand(40 , 60);
+				if (pre < 40){
+					rndHeight();
+				}else{
+					return pre;
+				}
+
+			};
+
+			for (var index=0 ; index<=250 ; index++) {
+				(function(indexed){
+					divs.item(indexed).style.color = rndColor();
+					divs.item(indexed).style.backgroundColor = rndColor();
+					divs.item(indexed).style.position = "absolute";					
+					divs.item(indexed).style.top = rndTop() + "px";
+					divs.item(indexed).style.left = rndLeft() + "px";
+					divs.item(indexed).style.width = "80px";
+					divs.item(indexed).style.height = "40px";
+					divs.item(indexed).style.WebkitBorderRadius = "10px";
+
+				  	divs.item(indexed).onmouseover = function(){
+				    	this.style.color = rndColor();
+						this.style.backgroundColor = rndColor();
+						this.style.position = "absolute";
+						this.style.WebkitTransition = "all 200ms";					
+						this.style.MozTransition = "all 200ms";					
+						this.style.top = rndTop() + "px";
+						this.style.left = rndLeft() + "px";
+						this.style.width = rndWidth() + "px";
+						this.style.height = rndHeight() + "px";
+				    };
+				})(index);
+			}
+		}; //End of function init.
+
+		window.onload = function (){
+			generate();
+			init();
+		}; //End of window.onload
+	</script>
+	<style type="text/css">
+		body{
+			background-color: #000;
+		}
+	</style>
+</head>
+<body>
+	
+</body>
+</html>
+```
