@@ -84,3 +84,10 @@ I copy this ajax matter as a quick n' easy guid for you to use Ajax,
 
 The server side part is as follows :
 
+'''php
+<?php 
+	$q=$_REQUEST["q"]; 
+	echo $q*2;
+ ?>
+'''
+
