@@ -1,0 +1,92 @@
+Long time, no see.
+Here is what I've learned using MDN enormously :) 
+I copy this ajax matter as a quick n' easy guid for you to use Ajax,
+(without using jquery, trying to avoid its lower speed in some cases).
+
+'''
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>a2</title>
+</head>
+<body>
+	<!--generating the links-->	
+	<div style="background-color:gray;width:100px;min-height:200px;">
+		<?php
+
+		for ($i=0 ; $i < 9 ; $i++) { 
+			echo "<a href='#' class='links'>{$i}</a><br/><br/>";	
+		}
+
+		?>
+	</div>
+
+	<script type="text/javascript">
+
+	(function (){
+		var links = document.getElementsByTagName('a');
+		var httpRequest;
+
+		for (i=0 ; i<links.length ; i++){
+	    	links[i].onclick = function (){
+	    		makeRequest(this.innerHTML);
+	    	};
+    	}
+
+
+		function makeRequest(theValue) {
+		    if (window.XMLHttpRequest) { // Mozilla, Safari, ...
+		    	httpRequest = new XMLHttpRequest();
+		    } else if (window.ActiveXObject) { // IE
+		    	try {
+		    		httpRequest = new ActiveXObject("Msxml2.XMLHTTP");
+		    	} 
+		    	catch (e) {
+		    		try {
+		    			httpRequest = new ActiveXObject("Microsoft.XMLHTTP");
+		    		} 
+		    		catch (e) {}
+		    	}
+		    }
+
+		    if (!httpRequest) {
+		    	alert('Giving up :( Cannot create an XMLHTTP instance');
+		    	return false;
+	    	}
+
+	    	httpRequest.onreadystatechange = alertContents;
+	    	httpRequest.open('GET', 'a2_process.php?q=' + theValue);
+	    	httpRequest.send();
+	    } // end of makeRequest
+
+	    function alertContents() {
+	    	if (httpRequest.readyState === 4) {
+	    		if (httpRequest.status === 200) {
+	    			console.log(httpRequest.responseText);
+	    		} else {
+	    			console.log('There was a problem with the request.');
+	    		}
+	    	}
+	    } // end of alertContents
+
+
+
+
+
+})();
+
+</script>
+
+</body>
+</html>
+'''
+
+The server side part is as follows :
+
+'php
+<?php 
+	$q=$_REQUEST["q"]; 
+	echo $q*2;
+ ?>
+'''
