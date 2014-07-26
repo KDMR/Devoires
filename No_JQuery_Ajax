@@ -3,7 +3,7 @@ Here is what I've learned using MDN enormously :)
 I copy this ajax matter as a quick n' easy guid for you to use Ajax,
 (without using jquery, trying to avoid its lower speed in some cases).
 
-'''
+'''php
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -84,7 +84,7 @@ I copy this ajax matter as a quick n' easy guid for you to use Ajax,
 
 The server side part is as follows :
 
-'php
+'''php
 <?php 
 	$q=$_REQUEST["q"]; 
 	echo $q*2;
