@@ -21,3 +21,9 @@ print (name.strip())	# prints `Ada`
 print (name.rstrip())	# prints ` Ada`
 print (name.lstrip())	# prints `Ada `
 print("\n\n")
+
+
+
+
+
+
