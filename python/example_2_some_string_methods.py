@@ -16,10 +16,10 @@ print (myString[2])	# prints r
 print("\n\n")
 
 # stripping whitespaces from a string variable's sorrowndings
-name = " Ada "
-print (name.strip())	# prints `Ada`
-print (name.rstrip())	# prints ` Ada`
-print (name.lstrip())	# prints `Ada `
+name = " Claude "
+print (name.strip())	# prints `Claude`
+print (name.rstrip())	# prints ` Claude`
+print (name.lstrip())	# prints `Claude `
 print("\n\n")
 
 
