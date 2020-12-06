@@ -118,6 +118,36 @@ names_computers = ["Altaire 8800", "IBM 610", "Kenbak-1", "MIR", "Datapoint 202"
 
 
 
+# Printing all the members of a list
+# for name in names_computers:
+# 	print(name.title())
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 #################################################################################
 #################################################################################
