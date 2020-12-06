@@ -83,3 +83,42 @@ names_computers = ["Altaire 8800", "IBM 610", "Kenbak-1", "MIR", "Datapoint 202"
 
 
 
+# Sorting a list permanantly
+# names_human.sort()
+# print(names_human)
+
+
+
+# Printing a sorted form of a list
+# withought changing the list itself
+# print(sorted(names_human))
+
+
+
+# Sorting a list in the reverse order
+# First method:
+		# names_human.sort(reverse=True)
+		# print(names_human)
+# Second method:
+		# names_human.reverse()
+		# print(names_human)
+
+
+
+# Printing a reversed form of a list withought actually changing it:
+# The reversed() function returns the reversed iterator of the given sequence.
+# You therefore need to convert it to a list to be able to print it properly.
+# reversed_names_human = list(reversed(names_human))
+# print(reversed_names_human)
+
+
+
+# Printing the length of a list
+# print(len(names_human))
+
+
+
+
+#################################################################################
+#################################################################################
+#################################################################################
