@@ -1,4 +1,3 @@
-
 # Defining some lists
 names_human = ["Koorosh", "Morgane", "Pauline", "Justin", "Megan", "Till", "Marianna", "Borin", "Katherine", "Lee", "Anastasia", "Shyam", "Salona"]
 names_cars = ["Bugatti", "BMW", "Peykan", "Renault", "Mercedes-Benz", "Peugeot", "Citroen", "Alpine"]
@@ -115,6 +114,41 @@ names_computers = ["Altaire 8800", "IBM 610", "Kenbak-1", "MIR", "Datapoint 202"
 
 # Printing the length of a list
 # print(len(names_human))
+
+
+
+# Printing all values located in a list
+# for name in names_human:
+# 	print(name)
+
+
+
+# Create a numerical list (like C languag's for-loop)
+# for number in range(0, 10):
+# 	print("Current Number: {0}".format(number))
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+##############################################
+## I Am On Line: 148 of Python_Crash_Course ##
+##############################################
+
 
 
 
