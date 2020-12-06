@@ -117,7 +117,7 @@ names_computers = ["Altaire 8800", "IBM 610", "Kenbak-1", "MIR", "Datapoint 202"
 
 
 
-<<<<<<< HEAD
+
 # Printing all values located in a list
 # for name in names_human:
 # 	print(name)
@@ -127,15 +127,12 @@ names_computers = ["Altaire 8800", "IBM 610", "Kenbak-1", "MIR", "Datapoint 202"
 # Create a numerical list (like C languag's for-loop)
 # for number in range(0, 10):
 # 	print("Current Number: {0}".format(number))
-=======
 # Printing all the members of a list
 # for name in names_computers:
 # 	print(name.title())
 
 
 
-
->>>>>>> lists
 
 
 
