@@ -186,6 +186,14 @@ names_computers = ["Altaire 8800", "IBM 610", "Kenbak-1", "MIR", "Datapoint 202"
 
 
 
+
+
+
+
+
+
+
+
 ##############################################
 ## I Am On Line: 148 of Python_Crash_Course ##
 ##############################################
