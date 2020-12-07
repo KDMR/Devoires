@@ -182,10 +182,28 @@ names_computers = ["Altaire 8800", "IBM 610", "Kenbak-1", "MIR", "Datapoint 202"
 
 
 
-### How to copy a list
+### How to copy a list?
 # new_names_cars = names_cars[:]
 # new_names_cars.insert(0, "Alfa Romeo")
 # print(new_names_cars)
+
+
+
+### What is a tuple?
+### When a value can not be changed, Python calls it immutable.
+### An immutable list is called a tuple in Python.
+### As we not change the values of a tuple, we would have to 
+### create our tuple again with new values to have a tuple with
+### new values but with the previous name.
+# les_travers = (27, 30, 16, 93) # Our presumed original tuple
+# les_travers = (100, 23, 11, 44) # Our new valued tuple with the same old name 
+
+
+
+### How to create a tuple from a list?
+# my_tuple = tuple(names_computers[:])
+# for name in my_tuple:
+# 	print(name) 
 
 
 
