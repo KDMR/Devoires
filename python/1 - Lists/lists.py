@@ -161,7 +161,17 @@ names_computers = ["Altaire 8800", "IBM 610", "Kenbak-1", "MIR", "Datapoint 202"
 
 
 
-
+### Slicing a list
+### in slicing a list, the first number is the index to start from
+### the second number is where to end and the third one is the stps
+### to be taken. If any of the numbers are not written, the maximum
+### number possible will be considered to be taken into accout.
+### Example_1:
+# my_list = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+# print (my_list[-1:-6:-1])
+### Example_2:
+# my_list = range(0, 21)
+# print(my_list[0::2])
 
 
 
