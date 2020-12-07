@@ -136,6 +136,20 @@ names_computers = ["Altaire 8800", "IBM 610", "Kenbak-1", "MIR", "Datapoint 202"
 
 
 
+### On how to use the list comprehentions
+### list comprehentions help you to use a
+### for-loop, make some processing on the 
+### data and then place them in a list all 
+### by itself. These operations are done 
+### along one line of code only.
+# product_tax = 0.27
+# product_price = [27, 34, 43, 77, 66.4, 89.5, 55]
+# values = [price*product_tax + price for price in product_price]
+# for value in values:
+#   print("The total price for you to pay is: {0}$ .".format(value))
+
+
+
 
 
 
