@@ -5,10 +5,13 @@ names_computers = ["Altaire 8800", "IBM 610", "Kenbak-1", "MIR", "Datapoint 202"
 
 
 
-# how to write an if (example 1)
-name = "Shirin"
-list_name = "names_human"
-if name in names_human:
-	print("{0}is in the list: names_human".format(name))
-else:
-	print("{0} is not in the list: {1}".format(name, list_name))
+### how to write an if (example 1)
+# name = "Shirin"
+# list_name = "names_human"
+# if name in names_human:
+# 	print("{0} is in the list: {1}".format(name, list_name))
+# else:
+# 	print("{0} is not in the list: {1}".format(name, list_name))
+
+
+
