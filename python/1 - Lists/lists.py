@@ -182,6 +182,13 @@ names_computers = ["Altaire 8800", "IBM 610", "Kenbak-1", "MIR", "Datapoint 202"
 
 
 
+### How to copy a list
+# new_names_cars = names_cars[:]
+# new_names_cars.insert(0, "Alfa Romeo")
+# print(new_names_cars)
+
+
+
 
 
 
