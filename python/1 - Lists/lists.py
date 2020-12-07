@@ -164,6 +164,12 @@ names_computers = ["Altaire 8800", "IBM 610", "Kenbak-1", "MIR", "Datapoint 202"
 
 
 
+### On how to loop throught a slice
+# new_wishes = ["I wish that {0} was not this expensive.".format(car_name) for car_name in names_cars]
+# for wish in new_wishes[:4]:
+# 	print(wish)
+
+
 
 
 
