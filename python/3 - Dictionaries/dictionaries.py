@@ -38,3 +38,10 @@
 
 
 
+### How to loop throught all key-value pairs
+# car = {"Window": 4, "Wheel": 4, "Antenna": 1}
+# for key, value in car.items():
+# 	print("\nNumber of {0}s: {1}".format(key, value))
+
+
+
