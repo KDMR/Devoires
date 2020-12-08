@@ -2,11 +2,14 @@
 #/////////////////////////////////////  Dictionaries   ///////////////////////////////////
 #/////////////////////////////////////////////////////////////////////////////////////////
 
+nest_list = []
+nest_dict = {}
 user1_info = {"fname":"Grace", "lname":"Hopper"}
 user2_info = {"fname":"mike", "lname":"Muuss"}
 user3_info = {"fname":"Dennis", "lname":"Ritchie"}
 user4_info = {"fname":"Ken", "lname":"Thompson"}
 car = {"Window": 4, "Wheel": 4, "Antenna": 1, "Wheel": 40}
+
 
 
 ### On how a dictionaty is
@@ -66,6 +69,40 @@ car = {"Window": 4, "Wheel": 4, "Antenna": 1, "Wheel": 40}
 ### How to loop throught all values of a dictionary
 # for value in car.values():
 # 	print("value is: {0}.\n".format(value))
+
+
+
+### How to do Nesting
+### If you place some dictionaries or lists inside 
+### another dictionay or another list, your are 
+### nesting them. Below are some examples:
+
+
+
+### nesting dictionaries inside a list
+# nest_dict = [user1_info, user2_info]
+# print(nest_dict)
+
+
+
+## nesting dictionaries inside a dictionary
+# store_available_cars = {
+# 	"BMW" : {
+# 		"BMW 7 Series" : 2,
+# 		"BMW 8 Series" : 1,
+# 		"BMW M5" : 5,
+# 		"BMW i8" : 2
+# 	},
+# 	"Renault" : {
+# 		"Renault Zoe" : 3,
+# 		"Renault Kiger" : 2,
+# 		"Renault K-ZE" : 2,
+# 		"Renault Arkana" : 1
+# 	}
+# }
+# for brand, model in  store_available_cars.items():
+# 	for name, number in model.items():
+# 		print("Brand: {0}\n\tModel: {1}\n\tNumber available:{2}\n\t".format(brand, name, number))
 
 
 
