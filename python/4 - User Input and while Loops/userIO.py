@@ -10,3 +10,12 @@
 
 
 
+### How to recieve integer values from input function?
+### The input function stores the date that you enter 
+### as a string. To convert it to an integer, use the built-in int()
+### function.
+# userInput = input("Enter your payment amount: ")
+# print("Your wage is: {0}$.".format(int(userInput)))
+
+
+
