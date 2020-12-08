@@ -30,3 +30,11 @@
 
 
 
+### How to delete a key-value pair
+# car = {"Window": 4, "Wheel": 4, "Antenna": 1}
+# print("The current state of the car is: " + str(car))
+# del car["Antenna"]
+# print("The current state of the after some deletion is: " + str(car))
+
+
+
