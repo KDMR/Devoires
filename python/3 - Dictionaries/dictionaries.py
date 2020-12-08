@@ -16,3 +16,10 @@
 
 
 
+### How to add new elements to dictionary
+# car = {"Window": 4, "Wheel": 4}
+# car["Antenna"] = 1
+# print(car)
+
+
+
