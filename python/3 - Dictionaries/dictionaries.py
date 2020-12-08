@@ -6,7 +6,7 @@ user1_info = {"fname":"Grace", "lname":"Hopper"}
 user2_info = {"fname":"mike", "lname":"Muuss"}
 user3_info = {"fname":"Dennis", "lname":"Ritchie"}
 user4_info = {"fname":"Ken", "lname":"Thompson"}
-car = {"Window": 4, "Wheel": 4, "Antenna": 1}
+car = {"Window": 4, "Wheel": 4, "Antenna": 1, "Wheel": 40}
 
 
 ### On how a dictionaty is
@@ -60,6 +60,12 @@ car = {"Window": 4, "Wheel": 4, "Antenna": 1}
 # print("Ordered list of keys:")
 # for key in sorted(car.keys()):
 # 	print("\t{0}".format(key))
+
+
+
+### How to loop throught all values of a dictionary
+# for value in car.values():
+# 	print("value is: {0}.\n".format(value))
 
 
 
