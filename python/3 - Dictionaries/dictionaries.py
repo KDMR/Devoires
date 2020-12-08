@@ -53,3 +53,13 @@ car = {"Window": 4, "Wheel": 4, "Antenna": 1}
 ### Looping throught the keys of a dictionary
 # for key in user1_info.keys():
 # 	print("\n{0}".format(key))
+
+
+
+### Looping throught a dictionariy's keys in order
+# print("Ordered list of keys:")
+# for key in sorted(car.keys()):
+# 	print("\t{0}".format(key))
+
+
+
