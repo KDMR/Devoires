@@ -23,3 +23,10 @@
 
 
 
+### How to modify a value in a dictionary
+# car = {"Window": 4, "Wheel": 4}
+# car["Wheel"] = 6
+# print(car)
+
+
+
