@@ -2,6 +2,11 @@
 #/////////////////////////////////////  Dictionaries   ///////////////////////////////////
 #/////////////////////////////////////////////////////////////////////////////////////////
 
+user1_info = {"fname":"Grace", "lname":"Hopper"}
+user2_info = {"fname":"mike", "lname":"Muuss"}
+user3_info = {"fname":"Dennis", "lname":"Ritchie"}
+user4_info = {"fname":"Ken", "lname":"Thompson"}
+car = {"Window": 4, "Wheel": 4, "Antenna": 1}
 
 
 ### On how a dictionaty is
@@ -45,3 +50,6 @@
 
 
 
+### Looping throught the keys of a dictionary
+# for key in user1_info.keys():
+# 	print("\n{0}".format(key))
