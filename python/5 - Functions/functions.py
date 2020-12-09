@@ -81,3 +81,15 @@ car = {"Window": 4, "Wheel": 4, "Antenna": 1, "Wheel": 40}
 
 
 
+### Pass a list to a function without changing
+### the original list at later times by passing a copy of it
+### a copy of it to the function
+# names = names_human[:]
+# def greet_users(names):
+# 	for name in names:
+# 		msg = "Hello, " + name.title() + "!"
+# 		print(msg)
+# greet_users(names)
+
+
+
