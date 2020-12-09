@@ -99,3 +99,7 @@ car = {"Window": 4, "Wheel": 4, "Antenna": 1, "Wheel": 40, "Roof": 1, "Windshiel
 
 
 
+### Looping through dictionaries
+### It is done by using for in loops
+# for key, value in car.items():
+# 	print("Key: {0}{1}Value: {2}".format(key, "            ", value))
