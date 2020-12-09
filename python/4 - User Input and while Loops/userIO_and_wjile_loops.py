@@ -3,6 +3,9 @@
 #/////////////////////////////  User Input and while Loops   /////////////////////////////
 #/////////////////////////////////////////////////////////////////////////////////////////
 
+names_human = ["Koorosh", "Morgane", "Pauline", "Justin", "Megan", "Till", "Marianna", "Borin", "Katherine", "Lee", "Anastasia", "Shyam", "Salona"]
+
+
 ### How does input function work?
 ### Whatever the user inputs is read as a string
 # userInput = input("Hi, What is your name? ")
@@ -49,6 +52,22 @@
 # 		print("Step: {0}".format(retry_step))
 # 		print(message + "\n")
 # 		retry_step += 1
+
+
+
+### How to break loop execution immiditely
+### Use `break` to exit the loop at once
+# prompt = "Enter your name: "
+# active = True
+# while active:
+# 	name = input(prompt)
+# 	if name not in names_human:
+# 		prompt = "\n\nAre you sure you have enough crecentials for the name: {0}?"
+# 		prompt += "\nExiting the program now...\n"
+# 		print(prompt.format(name))
+# 		break
+# 	else:
+# 		print("Welcome {0}, you have successfully logged in.\n")
 
 
 
