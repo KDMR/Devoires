@@ -30,3 +30,12 @@ car = {"Window": 4, "Wheel": 4, "Antenna": 1, "Wheel": 40}
 
 
 
+### How to use positional arguments
+# name = "Estragon"
+# car = names_cars[0]
+# def friends_news(name, car):
+# 	print("{0} has just bought a new {1}.".format(name.upper(), car.upper()))
+# friends_news(name, car)
+
+
+
