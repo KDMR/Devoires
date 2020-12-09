@@ -22,3 +22,11 @@ car = {"Window": 4, "Wheel": 4, "Antenna": 1, "Wheel": 40}
 
 
 
+### How to pass information to a function
+# def welcome(name):
+# 	print("Hello {0} and welcome!".format(name))
+# for name in names_human:
+# 	welcome(name)
+
+
+
