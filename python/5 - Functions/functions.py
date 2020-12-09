@@ -39,3 +39,22 @@ car = {"Window": 4, "Wheel": 4, "Antenna": 1, "Wheel": 40}
 
 
 
+### What are keyword arguments?
+### You do not need to pass keyword arguments in order
+# name = "Estragon"
+# car = names_cars[0]
+# def friends_news(person_name, person_car):
+# 	print("{0} has just bought a new {1}.".format(name.upper(), car.upper()))
+# friends_news(person_name = name, person_car = car)
+
+
+
+### How to use default values for arguments?
+# def animal_care(name, action = "Feeding"):
+# 	print("Action to be taken on {0} is: {1}.".format(name, action))
+# animal_care("Puppy", "Grooming")
+# animal_care("caty")
+# animal_care("Piggy", "Washing")
+
+
+
