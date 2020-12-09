@@ -71,3 +71,14 @@ names_human = ["Koorosh", "Morgane", "Pauline", "Justin", "Megan", "Till", "Mari
 
 
 
+### How to pass the current loop operations 
+### withought executing any of the follwing 
+### operations of the current loop step?
+# max_limit = int(input("Enter a number: "))
+# current_number = 0
+# print("Below is the list of all the odd numbers between 0 and {0}:".format(max_limit))
+# while current_number < max_limit:
+# 	current_number += 1
+# 	if current_number % 2 == 0:
+# 		continue
+# 	print(current_number)
