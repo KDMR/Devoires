@@ -13,3 +13,12 @@ user4_info = {"fname":"Ken", "lname":"Thompson"}
 car = {"Window": 4, "Wheel": 4, "Antenna": 1, "Wheel": 40}
 
 
+
+### How is a function written and called?
+# def welcome():
+# 	for name in names_human:
+# 		print("Hello {0} and welcome!".format(name))
+# welcome()
+
+
+
