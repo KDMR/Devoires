@@ -69,3 +69,13 @@ car = {"Window": 4, "Wheel": 4, "Antenna": 1, "Wheel": 40}
 
 
 
+### pass a list to a function
+# usernames = names_human[:]
+# def greet_users(names):
+# 	for name in names:
+# 		msg = "Hello, " + name.title() + "!"
+# 		print(msg)
+# greet_users(usernames)
+
+
+
