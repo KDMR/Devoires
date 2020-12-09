@@ -4,6 +4,7 @@
 #/////////////////////////////////////////////////////////////////////////////////////////
 
 names_human = ["Koorosh", "Morgane", "Pauline", "Justin", "Megan", "Till", "Marianna", "Borin", "Katherine", "Lee", "Anastasia", "Shyam", "Salona"]
+car = {"Window": 4, "Wheel": 4, "Antenna": 1, "Wheel": 40, "Roof": 1, "Windshield": 1, "Handle": 5, "Tire": 4}
 
 
 ### How does input function work?
@@ -82,3 +83,19 @@ names_human = ["Koorosh", "Morgane", "Pauline", "Justin", "Megan", "Till", "Mari
 # 	if current_number % 2 == 0:
 # 		continue
 # 	print(current_number)
+
+
+
+### While loop for lists
+# not_logged_in_users = names_human[:]
+# logged_in_users = []
+# while not_logged_in_users:
+# 	current_user = not_logged_in_users.pop()
+# 	print("Verifying user: " + current_user.title())
+# 	logged_in_users.append(current_user)
+# print("\nThe following users have been confirmed:")
+# for logged_in_user in logged_in_users:
+# 	print(logged_in_user.title())
+
+
+
