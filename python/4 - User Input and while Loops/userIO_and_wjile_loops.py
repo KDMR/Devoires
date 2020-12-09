@@ -28,3 +28,27 @@
 
 
 
+### What is aflag?
+### We use a variable (and call it a flag), we set it
+### to false whenever the continuation of application's
+### needs to be halted, and when a check is done on 
+### the flag's value, the process may be terminated if
+### the flag's value is False.
+# prompt = "\nPlease enter your name to continue,"
+# prompt += "\nEnter 'quit' to end the program. "
+# message = print(prompt)
+# active = True  # varible `active` is the flag
+# retry_step = 0
+# while active:
+# 	message = input(">>> ")
+# 	if message == 'quit':
+# 		print("Step: {0}".format(retry_step))
+# 		print("\nYou typed `quit`, therefore the program stopped running.\n")
+# 		active = False
+# 	else:
+# 		print("Step: {0}".format(retry_step))
+# 		print(message + "\n")
+# 		retry_step += 1
+
+
+
