@@ -93,3 +93,25 @@ car = {"Window": 4, "Wheel": 4, "Antenna": 1, "Wheel": 40}
 
 
 
+### Passing an unknown number of arguments
+# def account(*payments):
+# 	transactions = []
+
+# 	"""Receiving the list of transactions"""
+# 	for payment in payments:
+# 		transactions.append(payment)
+	
+# 	"""Calculating the account's balance"""
+# 	balance = 0
+# 	for amount in transactions:
+# 		balance += amount
+	
+# 	"""Printing the list of transactions"""
+# 	print("The list of incomes and payments: ")
+# 	for transaction in transactions:
+# 		print("\t{0}".format(transaction))
+
+# 	"""Printing the balance"""
+# 	print("\nThe balance of your account:\n\t{0}$\n".format(balance))
+
+# account(27000, 30000, -26000)
