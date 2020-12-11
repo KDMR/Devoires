@@ -154,6 +154,17 @@ car = {"Window": 4, "Wheel": 4, "Antenna": 1, "Wheel": 40}
 
 
 ### How to use `as` to give a function an alias
-import modules as m
-name = "Zaza"
-m.greet_people(name)
+# import modules as m
+# name = "Zaza"
+# m.greet_people(name)
+
+
+
+### How to import all functions located in a module
+# from modules import *
+# name = "Zaza"
+# greet_people(name)
+# farewell_people(name)
+
+
+
