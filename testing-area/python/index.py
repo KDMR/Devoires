@@ -12,10 +12,127 @@ names_cars = ["Bugatti", "BMW", "Peykan", "Renault", "Mercedes-Benz", "Peugeot",
 							"Citroen", "Alpine"]
 names_computers = ["Altaire 8800", "IBM 610", "Kenbak-1", "MIR", "Datapoint 202",
 									 "Simon", "Micral N"]
-user1_info = {"fname":"Grace", "lname":"Hopper"}
-user2_info = {"fname":"mike", "lname":"Muuss"}
-user3_info = {"fname":"Dennis", "lname":"Ritchie"}
-user4_info = {"fname":"Ken", "lname":"Thompson"}
+user1_info = {"fname":"Grace", "lname":"Hopper", "address": "",
+							"children": , "company": "navy"}
+user2_info = {"fname":"mike", "lname":"Muuss", "address": "",
+							"children": , "company": "darpa"}
+user3_info = {"fname":"Dennis", "lname":"Ritchie", "address": "",
+							"children": , "company": "bell labs"}
+user4_info = {"fname":"Ken", "lname":"Thompson", "address": "",
+							"children": , "company": "bell labs"}
 car = {"Window": 4, "Wheel": 4, "Antenna": 1, "Wheel": 40}
+
+###########################################################################################
+###########################################################################################
+###########################################################################################
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
