@@ -138,3 +138,16 @@ car = {"Window": 4, "Wheel": 4, "Antenna": 1, "Wheel": 40}
 
 
 
+### How to use a function that is written in a module 
+# WHEN IMPORTING, CONSIDER THE FACT THAT IMPORTING THE ENTIRE MODULE IS DONE BY IMPORTING
+# ITS FILENAME. THIS MODULE MIGHT CONTAIN A METHOD AS THE NAME AS THE MODULE ITSELF. 
+# AS A RESULT, DO NOT FORGET TO USE THE METHOD AS THE FOLLOWING WAYS:
+# 1)	If importing the whole method:
+# 		Example:
+# 		import pprint
+# 		pprint.pprint(myDict)
+
+# 2)	If importing the method from module:
+# 		Example:
+# 		from pprint import pprint
+# 		pprint(myDict)
