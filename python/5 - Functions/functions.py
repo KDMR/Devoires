@@ -119,3 +119,8 @@ car = {"Window": 4, "Wheel": 4, "Antenna": 1, "Wheel": 40}
 
 
 
+### How to put a function in a module and call it
+### the modules.py is include in the same folder
+# import modules
+# name = "Zaza"
+# modules.greet_people(name)
