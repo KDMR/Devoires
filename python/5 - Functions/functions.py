@@ -124,3 +124,17 @@ car = {"Window": 4, "Wheel": 4, "Antenna": 1, "Wheel": 40}
 # import modules
 # name = "Zaza"
 # modules.greet_people(name)
+
+
+### What is a .pyc file
+###   This description comes from the link below:
+###   https://www.tutorialspoint.com/What-are-pyc-files-in-Python
+# .pyc files are created by the Python interpreter when a .py file is imported.
+# They contain the "compiled bytecode" of the imported module/program so that
+# the "translation" from source code to bytecode (which only needs to be done once) 
+# can be skipped on subsequent imports if the .pyc is newer than the corresponding .py file,
+# thus speeding startup a little. But it's still interpreted. 
+# Once the *.pyc file is generated, there is no need of *.py file, unless you edit it.
+
+
+
