@@ -8,7 +8,8 @@ class Person:
 		self.phone = phone
 		self.address = address
 
-		print("{0} {1} is residing at {2}.\nYou can contact him at {3}.".format(self.fname, self.lname, self.address, self.phone))
+		print("{0} {1} is residing at {2}.\nYou can contact him at \
+					 {3}.".format(self.fname, self.lname, self.address, self.phone))
 
 
-person = Person("Koorosh", "Sadeghi", "0098-99999", "Needle Park")
+person = Person("Helen", "Reeves", "0098-99999", "Needle Park")
